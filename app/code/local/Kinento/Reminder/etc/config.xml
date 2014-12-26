@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+<config>
+	
+	<modules>
+		<Kinento_Reminder>
+			<version>2.0.0</version>
+		</Kinento_Reminder>
+	</modules>
+	
+	<global>
+		<models>
+			<reminder>
+				<class>Kinento_Reminder_Model</class>
+				<resourceModel>reminder_mysql4</resourceModel>
+			</reminder>
+			<reminder_mysql4>
+				<class>Kinento_Reminder_Model_MySQL4</class>
+				<entities>
+					<reminder>
+						<table>reminder</table>
+					</reminder>
+				</entities>
+			</reminder_mysql4>
+			<sender>
+				<class>Kinento_Reminder_Model_Sender</class>
+			</sender>
+		</models>
+		<helpers>
+			<reminder>
+				<class>Kinento_Reminder_Helper</class>
+			</reminder>
+		</helpers>
+		<blocks>
+			<reminder>
+				<class>Kinento_Reminder_Block</class>
+			</reminder>
+		</blocks>
+		<template>
+			<email>
+				<reminder_emailsettings_templateone translate="label" module="reminder">
+					<label>Reminder One</label>
+					<file>reminder_one.html</file>
+					<type>html</type>
+				</reminder_emailsettings_templateone>
+				<reminder_emailsettings_templatetwo translate="label" module="reminder">
+					<label>Reminder Two</label>
+					<file>reminder_two.html</file>
+					<type>html</type>
+				</reminder_emailsettings_templatetwo>
+				<reminder_emailsettings_templatethree translate="label" module="reminder">
+					<label>Reminder Three</label>
+					<file>reminder_three.html</file>
+					<type>html</type>
+				</reminder_emailsettings_templatethree>
+			</email>
+		</template>
+		<resources>
+			<reminder_setup>
+				<setup>
+					<module>Kinento_Reminder</module>
+				</setup>
+				<connection>
+					<use>core_setup</use>
+				</connection>
+			</reminder_setup>
+			<reminder_write>
+				<connection>
+					<use>core_write</use>
+				</connection>
+			</reminder_write>
+			<reminder_read>
+				<connection>
+					<use>core_read</use>
+				</connection>
+			</reminder_read>
+		</resources>
+		<pdf>
+			<default>reminder/pdf_proforma_default</default>
+		</pdf>
+	</global>
+
+	<adminhtml>	
+		<acl>
+			<resources>
+				<all>
+					<title>Allow Everything</title>
+				</all>
+				<admin>
+					<children>
+						<sales>
+							<children>
+								<reminder>
+									<title>Order Reminders</title>
+									<sort_order>700</sort_order>
+								</reminder>
+							</children>
+						</sales>
+						<system>
+							<children>
+								<config>
+									<children>
+										<reminder>
+											<title>Kinento settings</title>
+										</reminder>
+									</children>
+								</config>
+							</children>
+						</system>
+					</children>
+				</admin>
+			</resources>
+		</acl>
+		<menu>
+			<sales>
+				<children>
+					<reminder translate="title" module="reminder">
+						<title>Order Reminders</title>
+						<sort_order>700</sort_order>
+						<action>reminder/view</action>
+					</reminder>
+				</children>
+			</sales>
+		</menu>
+		<translate>
+			<modules>
+				<reminder>
+					<files>
+						<default>Kinento_Reminder.csv</default>
+					</files>
+				</reminder>
+			</modules>
+		</translate>
+	</adminhtml>
+	
+	<admin>
+		<routers>
+			<reminder>
+				<use>admin</use>
+				<args>
+					<module>Kinento_Reminder</module>
+					<frontName>reminder</frontName>
+				</args>
+			</reminder>
+		</routers>
+	</admin>
+	
+	<crontab>
+		<jobs>
+			<sendreminders>
+				<schedule><cron_expr>*/15 * * * *</cron_expr></schedule>
+				<run><model>reminder/sender::cronMail</model></run>
+			</sendreminders>
+		</jobs>
+	</crontab>
+	
+	<default>
+		<reminder>
+			<timesettings>
+				<firstnotificationonaccount>7</firstnotificationonaccount>
+				<secondnotificationonaccount>14</secondnotificationonaccount>
+				<nthonaccount>7</nthonaccount>
+				<cancelonaccount>100</cancelonaccount>
+				<firstnotificationprepaid>7</firstnotificationprepaid>
+				<secondnotificationprepaid>14</secondnotificationprepaid>
+				<nthprepaid>7</nthprepaid>
+				<cancelprepaid>100</cancelprepaid>
+				<weekendsexclude>disabled</weekendsexclude>
+				<orderusecreation>enabled</orderusecreation>
+			</timesettings>
+			<generalsettings>
+				<startingdate>1257853617</startingdate>
+				<orderstatuses>pending</orderstatuses>
+			</generalsettings>
+			<emailsettings>
+				<paytypeone>We encourage you to pay as soon as possible for the items you purchased.</paytypeone>
+				<attachonaccount>enabled</attachonaccount>
+				<paytypetwo>We are still waiting for your payment. Without payment, no items will be shipped.</paytypetwo>
+				<attachprepaid>enabled</attachprepaid>
+				<normaltext>Example special text for 'normal' payments.</normaltext>
+				<alttext>Example special text for 'alternative' payments.</alttext>
+			</emailsettings>
+		</reminder>
+	</default>
+	
+</config>

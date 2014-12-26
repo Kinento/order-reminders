@@ -1,0 +1,88 @@
+
+# From file: Reminder/etc/config.xml
+"Order Reminders","Mahnung Bestellungen"
+"Reminder One","erste Mahnung"
+"Reminder Two","zweite Mahnung"
+"Reminder Three","dritte Mahnung"
+
+# From file: Reminder/etc/system.xml
+"Kinento","Kinento"
+"Time criteria","Zeiteinstellungen"
+"On-account customers:","Kunden:"
+"Prepaid customers:","Gäste:"
+"General settings","Allgemeine Einstellungen"
+"Include orders using payments:","Bestellungen mit folgenden Zahlungsmethoden berücksichtigen"
+"Include orders with status","Bestellungen mit folgendem Status berücksichtigen"
+"Email settings","Email Einstellungen"
+"Attachments for on-account customers","Anhänge für Kunden"
+"Attachments for prepaid customers","Anhänge für Gäste"
+"First notification after","Erste Mahnung nach"
+"days","Tagen"
+"Second notification after","Zweite Mahnung nach"
+"Third, fourth, fifth, etc.","dritte, vierte, fünfte, usw."
+"days after previous notification","Tage nach vorangegangener Mahnung"
+"Cancel orders automatically after","Bestellung automatisch stornieren nach"
+"Include orders starting from","Bestellungen berücksichtigen ab"
+"input as a UNIX timestamp (see unixtimestamp.com)","eintragen als UNIX Zeitstempel (siehe unixtimestamp.com)"
+"On-account customers are in the following group(s)","Kunden befinden sich in der/den folgenden Gruppe(n)"
+"Prepaid customers are set to all other groups","Gäste werden allen anderen Gruppen zugeordnet"
+"Send a copy to the following email address","Kopie der Nachricht an folgende Email Adresse senden"
+"Leave blank to disable this feature","Leer lassen um die Funktion zu deaktiveren"
+"First reminder template","Template erste Mahnung"
+"Create new templates using System-Transactional emails","Neue Templates über System/Transaktionsemails erstellen"
+"Second reminder template","Template zweite Mahnung"
+"Third reminder template","Template dritte Mahnung"
+"Special text for on-account customers","spezieller Text für Kunden"
+"input in HTML","verwenden Sie HTML"
+"Special text for prepaid customers","spezieller Text für Gäste"
+"Orders with these payments are in the 'normal' group","Bestellung mit dieser Zahlungmethode sind in der 'normalen' Gruppe"
+"Other payments are considered 'alternative'","andere Zahlungsmethoden werden als 'Alternativ' betrachtet"
+"Special text for normal payments","spezieller Text für normale Zahlungsmethoden"
+"Special text for 'alternative' payments","spezieller Text für 'alternative' Zahlungsmethoden"
+
+# From file: Reminder/Block/View/Main/Grid.php
+"Order id","Bestellnummer"
+"Store","Store"
+"Purchase date","Bestelldatum"
+"Shipping name","Warenempfänger"
+"Billing name","Rechnungsempfänger"
+"Amount","Betrag"
+"Order status","Bestellstatus"
+"Order type","Bestelltyp"
+"Reminders sent","Anzahl Mahnungen"
+"Disable notifications","Mahnungen deaktivieren"
+"Payment method","Zahlungsmethode"
+"Manual reminders","Manuelle Mahnungen"
+"Force send reminder(s) now","Mahnung jetzt senden"
+"Enable selected","Sichtbare wählen"
+"Disable selected","Sichtbare abwählen"
+
+# From file: Reminder/Block/View/Main/Widget/Column/Renderer/Grouptype.php
+"On account","Kunden"
+"Prepaid","Gäste"
+
+# From file: Reminder/Block/View/Main/Widget/Column/Renderer/Manual.php
+"Force send reminder now","Mahnung jetzt senden"
+
+# From file: Reminder/Block/View/Main/Widget/Column/Renderer/Payment.php
+"Enabled","Aktiviert"
+"Disabled","Deaktiviert"
+
+# From file: Reminder/Block/View/Main/Widget/Column/Renderer/Reminderssent.php
+"add","hinzufügen"
+"remove","entfernen"
+"reset to","zurücksetzen auf"
+
+# From file: Reminder/Block/View/Main/Widget/Column/Renderer/Status.php
+"Enable notifications","Mahnungen aktivieren"
+
+# From file: Reminder/Block/View/Main.php
+"Pending orders overview","Übersicht offene Bestellungen"
+"Send reminders now","Mahnung jetzt senden"
+
+# From file: Reminder/controllers/ViewController.php
+"Status changed.","Status geändert."
+"1 reminder sent manually","1 Mahnung manuell gesendet"
+"Please select one or more orders","Bitte wählen Sie eine oder mehrere Bestellungen"
+
+# From file: Reminder/Model/Attach.php

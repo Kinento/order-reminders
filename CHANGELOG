@@ -1,0 +1,108 @@
+ *
+ * Kinento Order Reminders
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ *
+ * @category   Kinento
+ * @package    Kinento_Reminder
+ * @copyright  Copyright (c) 2009-2015 Kinento
+ * @license    MIT license
+ *
+ * Installation guide & FAQ: see "manual.pdf"
+ *
+
+Version 2.0.0
+- Kinento Order Reminders is now a community-supported open-source module
+- The module is no longer maintained by Kinento
+- The module is freely available under the MIT license
+
+Version 1.3.4
+- Updated the manual
+- Various minor bug fixes
+
+Version 1.3.3
+- Added an option to consider last order update instead of order creation date as a criterium for sending reminders
+
+Version 1.3.2
+- Improved logging to a separate 'Kinento.log' file
+- Added additional user feedback
+- Fixes for missing sender name and email
+- Various minor bug fixes
+
+Version 1.3.1
+- Added an option to enable/disable the module entirely for a store/view
+- Improved multi-store/view support
+- Added the "shippingdescription" variable for email templates
+- Added "order_bis" as an alternative representation of the order in templates
+
+Version 1.3.0
+- Added a user guide (including installation, troubleshooting, FAQ)
+- Embedded the folder structure for easier installation
+- Added debug messages when sending emails
+
+Version 1.2.6
+- Added the possibility to exclude weekdays to determine an order's age
+- Display an order's age in the overview grid
+- Updated the order status list to match Magento 1.7's default statuses
+- A message will now be added to orders which are canceled
+- Fixed several minor bugs
+
+Version 1.2.5
+- Adjusted the module to enable translations
+- Added default locale files (translations) for: English, German, Dutch
+
+Version 1.2.4
+- Fixed a bug where the cronjob would assume settings from the default store
+- Major code clean-up
+- Fixed several minor bugs
+
+Version 1.2.3
+- Added a feature to automatically cancel orders after a given number of days
+
+Version 1.2.2
+- Added a feature to distinguish payment types in the emails
+- Set the cronjob to a higher frequency per default
+- Updated the text displayed on buttons on the main grid
+- Fixed a large number of minor bugs
+
+Version 1.2.1
+- Fixed a bug that occurred when installing Magento under 'admin/admin'
+- Added the variable 'invoiceid' to the transactional emails
+- Fixed a bug that obtained empty email addresses in Magento 1.4.1.0
+- Added an option to send mass send out forced reminders
+
+Version 1.2.0
+- Added an option to send a reminder copy to a customisable email address.
+- Added support for more than 2 reminders through an interval option.
+- Added support for transactional emails. This makes it possible to edit the reminder templates from within the Magento system.
+- Added an option to manipulate the reminder-send count from within the overview grid (reset, add, subtract).
+- Added a button to manually send a reminder for one order, independent of filters or settings.
+- Supports both Magento 1.3.x and 1.4.x through a setting
+- Various minor tweaks
+
+Version 1.1.2
+- Fixed a bug that was introduced in version 1.1.1 using Magento 1.4.1 or higher, which would prevent email addresses to be read from the Magento database.
+
+Version 1.1.1
+- Added support for Magento 1.4.1.0, 1.4.1.1 and higher.
+
+Version 1.1.0
+- Added a settings panel entry to in- or exclude certain payment methods from the order reminders module. Orders with a payment method not chosen will not receive any emails.
+- Added a column in the overview grid to display the payment type and whether it is disabled by the setting.
+
+Version 1.0.2
+- Fixed a bug where the filter in the grid would not perform filtering
+- Added a confirmation message when sending reminders through the manual reminder button
+- Added an option to perform a mass-action to enable/disable multiple orders
+
+Version 1.0.1
+- Added new options in the configuration panel to enable/disable attachments per customer type
+
+Version 1.0.0
+- Initial version

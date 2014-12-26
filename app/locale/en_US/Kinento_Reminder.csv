@@ -1,0 +1,88 @@
+
+# From file: Reminder/etc/config.xml
+"Order Reminders","Order Reminders"
+"Reminder One","Reminder One"
+"Reminder Two","Reminder Two"
+"Reminder Three","Reminder Three"
+
+# From file: Reminder/etc/system.xml
+"Kinento","Kinento"
+"Time criteria","Time criteria"
+"On-account customers:","On-account customers:"
+"Prepaid customers:","Prepaid customers:"
+"General settings","General settings"
+"Include orders using payments:","Include orders using payments:"
+"Include orders with status","Include orders with status"
+"Email settings","Email settings"
+"Attachments for on-account customers","Attachments for on-account customers"
+"Attachments for prepaid customers","Attachments for prepaid customers"
+"First notification after","First notification after"
+"days","days"
+"Second notification after","Second notification after"
+"Third, fourth, fifth, etc.","Third, fourth, fifth, etc."
+"days after previous notification","days after previous notification"
+"Cancel orders automatically after","Cancel orders automatically after"
+"Include orders starting from","Include orders starting from"
+"input as a UNIX timestamp (see unixtimestamp.com)","input as a UNIX timestamp (see unixtimestamp.com)"
+"On-account customers are in the following group(s)","On-account customers are in the following group(s)"
+"Prepaid customers are set to all other groups","Prepaid customers are set to all other groups"
+"Send a copy to the following email address","Send a copy to the following email address"
+"Leave blank to disable this feature","Leave blank to disable this feature"
+"First reminder template","First reminder template"
+"Create new templates using System-Transactional emails","Create new templates using System-Transactional emails"
+"Second reminder template","Second reminder template"
+"Third reminder template","Third reminder template"
+"Special text for on-account customers","Special text for on-account customers"
+"input in HTML","input in HTML"
+"Special text for prepaid customers","Special text for prepaid customers"
+"Orders with these payments are in the 'normal' group","Orders with these payments are in the 'normal' group"
+"Other payments are considered 'alternative'","Other payments are considered 'alternative'"
+"Special text for normal payments","Special text for normal payments"
+"Special text for 'alternative' payments","Special text for 'alternative' payments"
+
+# From file: Reminder/Block/View/Main/Grid.php
+"Order id","Order id"
+"Store","Store"
+"Purchase date","Purchase date"
+"Shipping name","Shipping name"
+"Billing name","Billing name"
+"Amount","Amount"
+"Order status","Order status"
+"Order type","Order type"
+"Reminders sent","Reminders sent"
+"Disable notifications","Disable notifications"
+"Payment method","Payment method"
+"Manual reminders","Manual reminders"
+"Force send reminder(s) now","Force send reminder(s) now"
+"Enable selected","Enable selected"
+"Disable selected","Disable selected"
+
+# From file: Reminder/Block/View/Main/Widget/Column/Renderer/Grouptype.php
+"On account","On account"
+"Prepaid","Prepaid"
+
+# From file: Reminder/Block/View/Main/Widget/Column/Renderer/Manual.php
+"Force send reminder now","Force send reminder now"
+
+# From file: Reminder/Block/View/Main/Widget/Column/Renderer/Payment.php
+"Enabled","Enabled"
+"Disabled","Disabled"
+
+# From file: Reminder/Block/View/Main/Widget/Column/Renderer/Reminderssent.php
+"add","add"
+"remove","remove"
+"reset to","reset to"
+
+# From file: Reminder/Block/View/Main/Widget/Column/Renderer/Status.php
+"Enable notifications","Enable notifications"
+
+# From file: Reminder/Block/View/Main.php
+"Pending orders overview","Pending orders overview"
+"Send reminders now","Send reminders now"
+
+# From file: Reminder/controllers/ViewController.php
+"Status changed.","Status changed."
+"1 reminder sent manually","1 reminder sent manually"
+"Please select one or more orders","Please select one or more orders"
+
+# From file: Reminder/Model/Attach.php

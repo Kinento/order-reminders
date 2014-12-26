@@ -1,0 +1,88 @@
+,
+# From file: Reminder/etc/config.xml,
+Order Reminders,Bestelling Herinneringen
+Reminder One,Eerste Herinnering
+Reminder Two,Tweede Herinnering
+Reminder Three,Reminder Three
+,
+# From file: Reminder/etc/system.xml,
+Kinento,Kinento
+Time criteria,Tijd criteria
+On-account customers:,Achterafbetalende klanten:
+Prepaid customers:,Voorafbetalende klanten
+General settings,Algemene instellingen
+Include orders using payments:,Bestellingen met betaalmethoden:
+Include orders with status,Bestellingen met status:
+Email settings,Email instellingen
+Attachments for on-account customers,Bijlagen voor achterafbetalende klanten
+Attachments for prepaid customers,Bijlagen voor voorafbetalende klanten
+First notification after,Eerste herinnering na
+days,dagen
+Second notification after,Tweede herinnering na
+"Third, fourth, fifth, etc.","Derde, vierde, vjfde, etc."
+days after previous notification,dagen na de vorige herinnering
+Cancel orders automatically after,Annuleer bestellingen automatisch na
+Include orders starting from,Bestellingen beginnend vanaf
+input as a UNIX timestamp (see unixtimestamp.com),als een UNIX timestamp (zie unixtimestamp.com)
+On-account customers are in the following group(s),Achterafbetalende klanten zijn in de volgende group(en)
+Prepaid customers are set to all other groups,Voorafbetalende klanten zijn automatisch in alle andere groupen
+Send a copy to the following email address,Stuur een kopie naar de volgende email adressen
+Leave blank to disable this feature,Laat dit veld leeg om geen kopie te sturen
+First reminder template,Template voor de eerste herinnering
+Create new templates using System-Transactional emails,Maak nieuwe templates via: System-Transactional emails
+Second reminder template,Template voor de tweede herinnering
+Third reminder template,Template voor de derde herinnering
+Special text for on-account customers,Speciale text voor achterafbetalende klanten
+input in HTML,in HTML
+Special text for prepaid customers,Speciale text voor voorafbetalende klanten
+Orders with these payments are in the 'normal' group,Bestellingen met deze betalingen zijn in de ‘normale’ group
+Other payments are considered 'alternative',Andere betalen zijn automatisch in de ‘alternatieve’ group
+Special text for normal payments,Speciale text voor ‘normale’ betalingen
+Special text for 'alternative' payments,Speciale text voor ‘alternatieve’ betalingen
+,
+# From file: Reminder/Block/View/Main/Grid.php,
+Order id,Bestelling ID
+Store,Winkel
+Purchase date,Aankoop datum
+Shipping name,Verzendnaam
+Billing name,Factuurnaam
+Amount,Totaal
+Order status,Bestelling status
+Order type,Bestelling soort
+Reminders sent,Aantal herinneringen gestuurd
+Disable notifications,De-activeer herinneringen
+Payment method,Betaalmethode
+Manual reminders,Handmatige herinneringen
+Force send reminder(s) now,Stuur herinnering(en) nu (geforceerd)
+Enable selected,Activeer geselecteerde
+Disable selected,De-activeer geselecteerde
+,
+# From file: Reminder/Block/View/Main/Widget/Column/Renderer/Grouptype.php,
+On account,Achterafbetalend
+Prepaid,Voorafbetalend
+,
+# From file: Reminder/Block/View/Main/Widget/Column/Renderer/Manual.php,
+Force send reminder now,Stuur herinnering nu (geforceerd)
+,
+# From file: Reminder/Block/View/Main/Widget/Column/Renderer/Payment.php,
+Enabled,Geactiveerd
+Disabled,Ge-de-activeerd
+,
+# From file: Reminder/Block/View/Main/Widget/Column/Renderer/Reminderssent.php,
+add,ophogen
+remove,verminderen
+reset to,reset naar
+,
+# From file: Reminder/Block/View/Main/Widget/Column/Renderer/Status.php,
+Enable notifications,Activeer herinneringen
+,
+# From file: Reminder/Block/View/Main.php,
+Pending orders overview,Open bestellingen overzicht
+Send reminders now,Stuur nu herinneringen
+,
+# From file: Reminder/controllers/ViewController.php,
+Status changed.,Status veranderd.
+1 reminder sent manually,1 herinnering handmatig gestuurd
+Please select one or more orders,Selecteer 1 of meerdere bestellingen
+,
+# From file: Reminder/Model/Attach.php,
