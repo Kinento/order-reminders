@@ -1,0 +1,10 @@
+{
+    "name":"kinento/order-reminders",
+    "type":"magento-module",
+    "license":"MIT",
+    "homepage":"https://github.com/Kinento/order-reminders",
+    "description":"To make sure your customers pay on time, Kinento's Order Reminders module provides you with an automatic reminder email based on order statuses.",
+    "require":{
+        "magento-hackathon/magento-composer-installer":"*"
+    }
+}
