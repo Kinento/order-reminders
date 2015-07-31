@@ -70,3 +70,36 @@ Feedback and testing:
 
 Locale: 
 - Translation files provided in English, German, and Dutch. 
+
+Installation Instructions
+-------------------------
+
+### Via modman
+
+- Install [modman](https://github.com/colinmollenhour/modman)
+- Use the command from your Magento installation folder: `modman clone https://github.com/Kinento/order-reminders.git`
+
+### Via composer
+- Install [composer](http://getcomposer.org/download/)
+- Install [Magento Composer](https://github.com/magento-hackathon/magento-composer-installer)
+- Create a composer.json into your project like the following sample:
+
+```json
+{
+    ...
+    "require": {
+        "kinento/order-reminders":"*"
+    },
+    "repositories": [
+	    {
+            "type": "vcs",
+            "url": "https://github.com/Kinento/order-reminders.git"
+        }
+    ],
+    "extra":{
+        "magento-root-dir": "./"
+    }
+}
+```
+
+- Then from your `composer.json` folder: `php composer.phar install` or `composer install`
