@@ -1,0 +1,14 @@
+app/code/local/Kinento/Reminder/ app/code/community/Kinento/Reminder/
+app/etc/modules/Kinento_Reminder.xml app/etc/modules/Kinento_Reminder.xml
+app/locale/de_DE/Kinento_Reminder.csv app/locale/de_DE/Kinento_Reminder.csv
+app/locale/de_DE/template/email/reminder_one.html app/locale/de_DE/template/email/reminder_one.html
+app/locale/de_DE/template/email/reminder_three.html app/locale/de_DE/template/email/reminder_three.html
+app/locale/de_DE/template/email/reminder_two.html app/locale/de_DE/template/email/reminder_two.html
+app/locale/en_US/Kinento_Reminder.csv app/locale/en_US/Kinento_Reminder.csv
+app/locale/en_US/template/email/reminder_one.html app/locale/en_US/template/email/reminder_one.html
+app/locale/en_US/template/email/reminder_three.html app/locale/en_US/template/email/reminder_three.html
+app/locale/en_US/template/email/reminder_two.html app/locale/en_US/template/email/reminder_two.html
+app/locale/nl_NL/Kinento_Reminder.csv app/locale/nl_NL/Kinento_Reminder.csv
+app/locale/nl_NL/template/email/reminder_one.html app/locale/nl_NL/template/email/reminder_one.html
+app/locale/nl_NL/template/email/reminder_three.html app/locale/nl_NL/template/email/reminder_three.html
+app/locale/nl_NL/template/email/reminder_two.html app/locale/nl_NL/template/email/reminder_two.html
