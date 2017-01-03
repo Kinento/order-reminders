@@ -3,7 +3,7 @@
     <modules>
         <Kinento_Reminder>
             <active>true</active>
-            <codePool>local</codePool>
+            <codePool>community</codePool>
         </Kinento_Reminder>
     </modules>
 </config>
